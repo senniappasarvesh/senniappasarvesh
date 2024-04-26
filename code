@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenGrowth - Planting Tracker</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>GreenGrowth</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="planting-tracker">
+            <h2>Planting Tracker</h2>
+            <!-- Form to log planting activity -->
+            <form id="planting-form">
+                <label for="tree-type">Tree Type:</label>
+                <input type="text" id="tree-type" name="tree-type" required>
+                <label for="plant-date">Plant Date:</label>
+                <input type="date" id="plant-date" name="plant-date" required>
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+                <button type="submit">Log Planting</button>
+            </form>
+        </section>
+        <section id="leaderboard">
+            <h2>Leaderboard</h2>
+            <!-- Leaderboard display -->
+            <ol>
+                <li>User 1 - 100 trees planted</li>
+                <li>User 2 - 80 trees planted</li>
+                <li>User 3 - 70 trees planted</li>
+                <!-- Add more users dynamically or fetch from a database -->
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 GreenGrowth. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script> <!-- Link to your JavaScript file for dynamic functionality -->
+</body>
+</html>
